@@ -12,6 +12,11 @@
 		C49BBC351E4456E200676591 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C49BBC331E4456E200676591 /* Main.storyboard */; };
 		C49BBC371E4456E200676591 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C49BBC361E4456E200676591 /* Assets.xcassets */; };
 		C49BBC3A1E4456E200676591 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C49BBC381E4456E200676591 /* LaunchScreen.storyboard */; };
+		C49BBC421E4457AF00676591 /* slide01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C49BBC411E4457AF00676591 /* slide01.jpg */; };
+		C49BBC461E4462F300676591 /* slide03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C49BBC451E4462F300676591 /* slide03.jpg */; };
+		C49BBC481E44631500676591 /* slide02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C49BBC471E44631500676591 /* slide02.jpg */; };
+		C49BBC4A1E446EA400676591 /* EnlargedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49BBC491E446EA400676591 /* EnlargedViewController.swift */; };
+		C49BBC4C1E44D08100676591 /* slide04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C49BBC4B1E44D08100676591 /* slide04.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		C49BBC361E4456E200676591 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C49BBC391E4456E200676591 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C49BBC3B1E4456E200676591 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C49BBC411E4457AF00676591 /* slide01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = slide01.jpg; sourceTree = "<group>"; };
+		C49BBC451E4462F300676591 /* slide03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = slide03.jpg; sourceTree = "<group>"; };
+		C49BBC471E44631500676591 /* slide02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = slide02.jpg; sourceTree = "<group>"; };
+		C49BBC491E446EA400676591 /* EnlargedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnlargedViewController.swift; sourceTree = "<group>"; };
+		C49BBC4B1E44D08100676591 /* slide04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = slide04.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +50,10 @@
 			children = (
 				C49BBC2E1E4456E200676591 /* SlideshowApp */,
 				C49BBC2D1E4456E200676591 /* Products */,
+				C49BBC411E4457AF00676591 /* slide01.jpg */,
+				C49BBC451E4462F300676591 /* slide03.jpg */,
+				C49BBC471E44631500676591 /* slide02.jpg */,
+				C49BBC4B1E44D08100676591 /* slide04.jpg */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +71,7 @@
 				C49BBC2F1E4456E200676591 /* AppDelegate.swift */,
 				C49BBC311E4456E200676591 /* ViewController.swift */,
 				C49BBC331E4456E200676591 /* Main.storyboard */,
+				C49BBC491E446EA400676591 /* EnlargedViewController.swift */,
 				C49BBC361E4456E200676591 /* Assets.xcassets */,
 				C49BBC381E4456E200676591 /* LaunchScreen.storyboard */,
 				C49BBC3B1E4456E200676591 /* Info.plist */,
@@ -124,9 +139,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C49BBC421E4457AF00676591 /* slide01.jpg in Resources */,
+				C49BBC481E44631500676591 /* slide02.jpg in Resources */,
 				C49BBC3A1E4456E200676591 /* LaunchScreen.storyboard in Resources */,
 				C49BBC371E4456E200676591 /* Assets.xcassets in Resources */,
 				C49BBC351E4456E200676591 /* Main.storyboard in Resources */,
+				C49BBC4C1E44D08100676591 /* slide04.jpg in Resources */,
+				C49BBC461E4462F300676591 /* slide03.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +158,7 @@
 			files = (
 				C49BBC321E4456E200676591 /* ViewController.swift in Sources */,
 				C49BBC301E4456E200676591 /* AppDelegate.swift in Sources */,
+				C49BBC4A1E446EA400676591 /* EnlargedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
