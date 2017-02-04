@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var slideImageView: UIImageView!
+    @IBOutlet weak var preButton: UIButton!
+    @IBOutlet weak var posButton: UIButton!
     var timer: Timer!
     let slideImages: [String] = ["slide01.jpg", "slide02.jpg", "slide03.jpg", "slide04.jpg"]
     var index: Int = 0
@@ -39,6 +41,9 @@ class ViewController: UIViewController {
         // 動作中のタイマーを1つに保つために、 timer が存在しない場合だけ、タイマーを生成して動作させる
         if self.timer == nil {
             self.timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(updateImage), userInfo: nil, repeats: true)
+            // 進む・戻るボタンの無効化
+            preButton.isEnabled = false
+            posButton.isEnabled = false
         }
     }
     
@@ -46,6 +51,9 @@ class ViewController: UIViewController {
         if self.timer != nil {
             self.timer.invalidate()   // 現在のタイマーを破棄する
             self.timer = nil          // startTimer() の timer == nil で判断するために、 timer = nil としておく
+            // 進む・戻るボタンの有効化
+            preButton.isEnabled = true
+            posButton.isEnabled = true
         }
     }
     
@@ -83,6 +91,9 @@ class ViewController: UIViewController {
         if self.timer != nil {
             self.timer.invalidate()   // 現在のタイマーを破棄する
             self.timer = nil          // startTimer() の timer == nil で判断するために、 timer = nil としておく
+            // 進む・戻るボタンの有効化
+            preButton.isEnabled = true
+            posButton.isEnabled = true
         }
         let enlargedViewController = storyboard?.instantiateViewController(withIdentifier: "enlarged") as! EnlargedViewController
         enlargedViewController.slide = self.slideImages[self.index]

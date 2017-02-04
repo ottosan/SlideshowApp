@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,14 +19,14 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleAspectFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6VU-85-oQo">
-                                <rect key="frame" x="16" y="30" width="343" height="587"/>
+                                <rect key="frame" x="20" y="30" width="374" height="656"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xQk-4j-MNs">
-                                        <rect key="frame" x="0.0" y="0.0" width="30" height="587"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="656"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="BuV-K4-dA8"/>
                                         </constraints>
@@ -36,10 +36,10 @@
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Q0-Gi-jaX">
-                                        <rect key="frame" x="30" y="0.0" width="283" height="587"/>
+                                        <rect key="frame" x="30" y="0.0" width="314" height="656"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dX-hi-6Ze">
-                                        <rect key="frame" x="313" y="0.0" width="30" height="587"/>
+                                        <rect key="frame" x="344" y="0.0" width="30" height="656"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="30" id="ccU-Mv-q2X"/>
                                         </constraints>
@@ -51,7 +51,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bA-dH-IK5">
-                                <rect key="frame" x="116" y="627" width="31" height="30"/>
+                                <rect key="frame" x="120" y="696" width="31" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="faW-ud-Ver"/>
                                 </constraints>
@@ -61,7 +61,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cc8-eQ-MFD">
-                                <rect key="frame" x="228" y="627" width="31" height="30"/>
+                                <rect key="frame" x="263" y="696" width="31" height="30"/>
                                 <state key="normal" title="停止"/>
                                 <connections>
                                     <action selector="pauseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nDc-z0-yfg"/>
@@ -81,6 +81,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="posButton" destination="0dX-hi-6Ze" id="wuE-ac-8AB"/>
+                        <outlet property="preButton" destination="xQk-4j-MNs" id="qRc-gq-hvp"/>
                         <outlet property="slideImageView" destination="3Q0-Gi-jaX" id="xcy-uV-u2A"/>
                     </connections>
                 </viewController>
@@ -97,14 +99,14 @@
                         <viewControllerLayoutGuide type="bottom" id="wJZ-B0-aRe"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Zh5-hJ-Pty">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UCm-BR-IQY">
-                                <rect key="frame" x="0.0" y="50" width="375" height="617"/>
+                                <rect key="frame" x="0.0" y="50" width="414" height="686"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f17-SM-zLe">
-                                <rect key="frame" x="16" y="20" width="45" height="30"/>
+                                <rect key="frame" x="20" y="20" width="45" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="45" id="eET-yK-dFG"/>
                                 </constraints>
